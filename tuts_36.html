@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert,prompt and confirm</title>
+    <style>
+        .container {
+            border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: blue;
+            font: bold;
+
+        }
+    </style>
+    <Script src="tuts_36.js"></Script>
+</head>
+
+<body>
+    <h3 class="container">This is javaScript about Alert, prompt and confirm functions </h3>
+</body>
+<script>
+    console.log("This is my Alert , prompt and confirm functions");
+    console.log("After execute this funtions execute DOM  ")  //Dom - Document object model( all html body contents)
+
+    // alert("Are you sure enter in home pages")
+
+    // if (alert) {
+    //     console.log("yes this is true")
+    // }
+    // else {                                         // After executing this if else statement output is return "yes this is true"
+    //     console.log("nothings")
+    // }
+
+
+    
+    // let userinp = prompt("Enter your name", "name(default)");      // User input
+    // if (userinp) {
+    //     console.log("user click on ok button");
+    //     console.log("The name is ", userinp);
+    // }
+    // else {
+    //     console.log("user click on cancel button");
+    //     console.log("The name is null" )
+    // }
+
+
+
+    let confermation = confirm("Do you really wants to delete this post");
+    // console.log(confirmation)         //Return boolean (True , False)
+
+    if (confermation) {
+        // code to ok 
+        console.log("your post has been deleted successfully");
+    }
+    else {
+        // code to cancel
+        console.log("your post has not been deleted");
+    }
+
+</script>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After pseudo selector</title>
+</head>
+<style>
+    body {
+        background-image:url(aj.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .navigation {
+        display: flex;
+        border: 2px solid red;
+        justify-content: center;
+
+    }
+
+    li>a {
+        margin: 15px 400px 15px 400px;
+        font-weight: solid;
+        color: blue;
+        font-size: 150px;
+        text-decoration: none;
+    }
+    div{
+        text-align: center;
+    }
+    h2{
+        margin: 300px 0px 150px 0px;
+        font-size: 15px;
+        color: red;
+    }
+    div > p{
+        font-size: 10px;
+        color: black;
+        font-weight: bold;
+    }
+
+    .section {
+        width: 100%vw;
+        border: 3px solid blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li> <a href="#"> Home </a></li>
+                <li> <a href="#"> About </a></li>
+                <li> <a href="#"> Servece </a></li>
+                <li> <a href="#"> Contact us </a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div>
+            <h2>
+                Welcome to coding with AJ Malhotra
+            </h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus suscipit similique ipsa incidunt
+                quos rem qui commodi error obcaecati illo dolores eaque nulla animi consequatur, ratione dolorum cum
+                unde quaerat necessitatibus nesciunt quasi vel debitis! Placeat aut officia nobis in quas facere
+                recusandae quod illo quis autem magni ducimus iusto aspernatur eveniet enim ut dicta tempore perferendis
+                aperiam, omnis neque dolor excepturi repellat. Provident, delectus ratione reprehenderit labore sit,
+                similique laudantium laboriosam dolorum dolore consectetur quisquam nam vitae alias, iure assumenda eius
+                praesentium numquam rerum ipsa pariatur reiciendis consequatur doloremque! Fugit ex repellendus rerum,
+                accusamus quis porro soluta! Ducimus, explicabo!
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>

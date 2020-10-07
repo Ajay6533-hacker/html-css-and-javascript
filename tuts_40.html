@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>settimeOut and setInterval</title>
+</head>
+<body>
+    <h3>this is setTimeOut and setInterval</h3>
+    <h5>Date and time shows</h5>
+
+    Time now is <span id="time"></span>  <!--this line for fix date and time , (line no.34-39 ) -->
+</body>
+<Script>
+    // setTimeout -- Allows us to run the function once after the interval of time
+    // clearTimeout   --  Allows us to run the function repeatedly after the interval of time
+
+
+    // setTimeout = Interval of time
+    function print(name,takecare){
+        console.log(`hello ${name} ${takecare}` )
+    }
+    timeout = setTimeout(print,4000,"Ajay","good morning and take care")       // 1 sec. = 1000
+    console.log(timeout)      // this is return the uniq ID of timeout
+
+    clearTimeout(timeout);     // Not see the timeout function execution
+
+    //setInterval
+    timeout = setInterval(print,1000,"Ajay","good morning and take care")       // 1 sec. = 1000
+    clearInterval(timeout)
+
+
+    // Fix date and time display
+    function displayTime(){
+        time = new Date();
+        // console.log(time);
+        document.getElementById('time').innerHTML = time;
+    }
+    setInterval(displayTime,1000);
+</Script>
+</html>

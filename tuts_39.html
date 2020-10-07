@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and listining to Events</title>
+</head>
+<style>
+    #btn {
+        border: 5px solid blue;
+        font-weight: bold;
+        color: white;
+        background-color: red;
+        border-radius: 4px;
+    }
+
+    #para {
+        background-color: yellow;
+        /* display: none; */
+    }
+</style>
+
+<body>
+    <!-- Browser events:
+    click
+    contextmenu 
+    mouseover/mouseout
+    mousedown/mouseup 
+    mousemove
+
+    submit
+    focus
+
+    DOMcontentloaded
+    transitionend
+-->
+
+
+    <div class="container">
+        <h2>This is my heading</h2>
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At debitis veniam adipisci illo repellat laborum,
+            soluta, quo saepe eius a, minima explicabo. Amet provident fuga veniam similique, fugiat consequuntur
+            dolorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda officiis aliquid unde
+            perspiciatis. Deserunt expedita, explicabo quas nemo corporis, nobis quisquam iure eum modi earum vitae
+            nulla cupiditate fugiat ducimus!
+        </p>
+        <button id="btn" onclick="togglehide()">Show/hide</button>
+    </div>
+    <Script>
+        // click the button
+        // function togglehide() {
+        //     let btn = document.getElementById('btn');
+        //     let para = document.getElementById('para')
+        //     if(para.style.display != 'none'){
+        //         para.style.display = 'none';     // also this single line working
+        //     }
+        //     else{
+        //         para.style.display = 'block'
+        //     }
+        // }
+
+
+
+
+
+        //mouseover and mouseout
+        para.addEventListener('mouseover', function run(){
+            console.log("mouse inside")
+            // alert("Mouse inside")
+        })
+
+
+
+        para.addEventListener('mouseout', function anything(){
+            console.log("mouse outside")
+            // alert("Mouse outside")
+        })
+
+
+        // mousedown and mouseup
+        para.addEventListener('mousedown', function run(){
+            console.log("mousedown in para")
+        })
+
+        para.addEventListener('mouseup', function run(){
+            console.log("mouseup in para")
+        })
+
+    </Script>
+</body>
+
+</html>

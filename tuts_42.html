@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <div class="conainer">
+        this is Arrow functions to write for short cut of the functions;
+    </div>
+</body>
+<Script>
+    function greet(){
+        console.log("this is a simple functions")
+    }
+    greet();
+    
+
+        // This is Arro funciton in given below:
+    greet = () => {
+        console.log("This is a arrow functions");
+    }
+    greet();
+
+    
+    let greet = () => console.log("this is a simple functions")
+    greet();
+
+    
+    setTimeout(() => {
+        console.log("this is my settiming create by Arrow funcitons")
+    },5000)
+
+    
+    
+    
+    let sum1 = (a,b) => {
+        return a+b;
+    }
+
+    
+    let sum2 = (a,b) => a+b;
+    let sum3 = a => a/2; 
+
+
+
+    let obj1={
+        greeting  : "good morning",
+        names: ["Ajay","Deepak","Aman","Nitishva"],
+        speak(){
+            this.names.forEach((student)=>{          // this = its points to always outside to the function when use of Arrow functions
+                console.log(this.greeting  + "  kukdoo koo  " + student);
+            });
+        }
+    }
+    obj1.speak();
+    
+</Script>
+</html>

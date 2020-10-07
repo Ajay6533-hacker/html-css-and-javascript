@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media quiery</title>
+    <style>
+        .boxes {
+            font-size: 50px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            /* display: none; */
+        }
+
+        @media (max-width: 500px) {
+            #first {
+                font-size: 50px;
+                display: block;
+                background-color: rgb(99, 99, 236);
+            }
+        }
+        @media (min-width: 500px) and (max-width: 800px) {
+            #second {
+                font-size: 60px;
+                display: block;
+                background-color: rgb(245, 129, 129);
+            }
+        }
+        @media (min-width:800px) and (max-width: 1200px) {
+            #third{
+                font-size: 70px;
+                display: block;
+                background-color: tomato
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes" id="first">
+        This is my personal apple Phone
+    </div>
+    <div class="boxes" id="second">
+        This is my tablet
+    </div>
+    <div class="boxes" id="third">
+        This is my desktop computer
+
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quiery</title>
+    <style>
+        .box{
+            border: 2px solid red;
+            /* width: 200px; */
+            height: 150px;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+        }
+        @media ( max-width:600px ){
+            #box-1{
+                background-color: rgb(182, 182, 238);
+                display: block;
+                color: red;
+            }
+        }
+        @media (min-width: 600px) and (max-width: 1200px){
+            #box-2{
+                background-color: orange;
+                color: green;
+            }
+        }
+        @media (min-width: 1200px) and (max-width: 2000px){
+            #box-3{
+                background-color: greenyellow;
+                color: tomato;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">Android phone</div>
+        <div class="box" id="box-2">Tablet</div>
+        <div class="box" id="box-3">Desktop computer</div>
+    </div>
+</body>
+</html>

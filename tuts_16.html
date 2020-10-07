@@ -1,0 +1,160 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float , alignment and clear</title>
+    <style>
+        .container {
+            border: 3px solid red;
+            width: 1100px;
+            margin: auto;
+            background-color: rgb(196, 252, 196);
+            /* margin: 5px; */
+        }
+
+        .lab {
+            font: italic;
+            border: 2px solid green;
+            margin: 5px 3px;
+            padding: 8px 2px;
+            background: rgba(245, 194, 99, 0.22);
+        }
+
+        #compara {
+            float: left;
+            width: 48%;
+        }
+
+        #webpara {
+            float: left;
+            width: 48%;
+
+        }
+
+        #machinepara {
+            /* float: left; */
+            clear: both;
+            width: 98%;
+        }
+        h1{
+            text-align: center;
+        }
+        p,h2{
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my computer Labs</h1>
+        <div id="compara" class="lab">
+            <h2> computer graphics Lab</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ab dolor assumenda autem dolorem sint,
+                fuga ipsum delectus fugit laudantium officiis id, odit quod distinctio temporibus ducimus maiores!
+                Recusandae a unde, ipsum porro voluptatem distinctio mollitia minima placeat beatae quo dolorem deleniti
+                sint amet eum voluptatibus dolorum illo ea sed! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, ratione odio maxime doloremque similique earum, voluptates eius temporibus error necessitatibus nostrum! Reiciendis libero ipsa quod dolore, officia repellat aperiam aspernatur?</p>
+        </div>
+
+        <div id="webpara" class="lab">
+            <h2>web-development Lab</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates cum ex ipsum reprehenderit delectus culpa doloribus alias asperiores quidem, fugiat et facere commodi fugit corporis ducimus odio numquam nesciunt esse? Sequi dolores nemo ipsum officiis alias cumque repellendus, quod libero Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium quaerat ullam reiciendis earum laboriosam magni veritatis iure, sint labore vero deleniti eius quo dicta molestiae sequi expedita velit incidunt mollitia! dolore! Similique voluptatum asperiores quaerat maxime harum doloremque  Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vitae, veniam voluptates natus animi quae tempore distinctio, laudantium temporibus, id provident sunt repudiandae consequuntur voluptas vel est aut et minima ex quos! Qui dicta temporibus tempora placeat? Asperiores, magnam exercitationem? aliquid!</p>
+        </div>
+        <div id="machinepara" class="lab">
+            <h2> machine learning Lab </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum commodi fugiat, veritatis,
+                voluptatibus facere ad incidunt earum ipsa, alias cumque! Enim corporis voluptate consequuntur non velit
+                natus sit a corrupti quasi numquam vitae rerum temporibus, assumenda aspernatur nisi. Repellendus ex,
+                cumque nisi magnam voluptatum fuga error vel eligendi voluptatem. Lorem40</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foat and clear</title>
+    <style>
+        body{
+            background-color: rgb(176, 225, 226);
+        }
+        .container {
+            border: 3px solid red;
+            width: 1150px;
+            margin: auto;
+            background-color: rgb(233, 233, 115);
+            overflow: auto;
+        }
+        .fruits {
+            border: 2px solid purple;
+            background-color: rgb(233, 193, 120);
+            margin:4px 2px;
+            padding: 5px 2px;
+        }
+
+        #apple {
+            float: left;
+            width: 48%;
+        }
+
+        #mango {
+            float: left;
+            width: 48%;
+        }
+
+        #banana {
+            float: left;
+            width: 98%;
+            clear: left;
+            clear: right;
+            clear: both;
+        }
+        h1,h2{
+            text-align: center;
+        }
+        .fruits{
+            text-align: left;
+            text-align: right;
+            text-align: center;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1> Details about fruits</h1>
+        <div class="fruits" id="apple">
+            <h2>details about Apple</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam totam doloremque aperiam
+                similique quia dicta at exercitationem quaerat nisi amet! Temporibus odio amet modi ipsam sunt
+                libero neque voluptatum quam?</p>
+        </div>
+        <div class="fruits" id="mango">
+            <h2>details about Mango</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam totam doloremque aperiam
+                similique quia dicta at exercitationem quaerat nisi amet! Temporibus odio amet modi ipsam sunt
+                libero neque voluptatum quam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam optio
+                pariatur tempora nemo ab natus ipsum, nesciunt magnam dolorem saepe voluptatem! Hic natus animi, veniam
+                commodi exercitationem illo distinctio voluptas?</p>
+        </div>
+        <div class="fruits" id="banana">
+            <h2>details about banana</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam totam doloremque aperiam
+                similique quia dicta at exercitationem quaerat nisi amet! Temporibus odio amet modi ipsam sunt
+                libero neque voluptatum quam?</p>
+        </div>
+    </div>
+</body>
+</html>

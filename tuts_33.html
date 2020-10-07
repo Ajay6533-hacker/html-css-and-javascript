@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope and constrants(if-else and switch statements)ss</title>
+</head>
+<Script src="tuts_33.js"></Script>
+
+<body>
+    <div class="container">
+        <div id='contents'><h2>if-else and switch statements</h2></div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere consectetur ipsa sequi quaerat, quisquam
+            iusto, et nobis voluptates consequuntur laudantium blanditiis sapiente debitis, sint minima odit. Adipisci
+            eius placeat minima.
+        </p>
+    </div>
+</body>
+<script>
+
+console.log(`addition of two numbers is ` + (48 + 53))
+// document.getElementById(contents).innerHTML= '<h2> This paragraph is used for  if-else statements and switch statements </h2>'
+
+let a=40;           //global variable
+{
+    // a=45;               // Local variable
+    console.log("value of a is " + (a))
+}
+
+
+
+
+let age = 18;
+if(age>18){
+console.log("You can drive the cars")
+}
+else if(age==18){
+    console.log("I think about you")
+}
+else{
+    console.log("You can't drive the cars")
+}
+
+
+
+
+let cups = 24;
+switch (cups) {
+    case 20:
+        console.log("The value of cups is 20")
+        break;
+    default:
+        console.log("The value of cups is not defined inside the  switch cases")
+        break;
+}
+
+
+
+
+const cups = 100;
+    switch (cups){
+        case 100:
+            console.log("The value of add is 100")
+            break;
+        case 99:
+            console.log("The value of add is 99")
+            break;
+        case 101:
+            console.log("The value of add is 101")
+            break;
+        default:
+            console.log("your content value have not available")
+            break;
+    }
+
+</script>
+</html>

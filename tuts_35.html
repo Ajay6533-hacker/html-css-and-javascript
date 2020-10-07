@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in java-Script</title>
+</head>
+<Script src="tuts_35.js"></Script>
+
+<body>
+    <h3>We are looking in this practice about Functions</h3>
+</body>
+<script>
+    
+    console.log("This is a functions in javaScripts");
+
+    let name1 = "Ajay";
+    let name2 = "Rahul";
+    let name3 = "Deepak";
+    let name4 = "vikram";
+    let text = " This is only try"      // (-for take the string(by default) if not given value)
+
+    console.log(name1 + "is a good boy");
+    console.log(name2 + "is a good boy");
+    console.log(name3 + "is a good boy");
+    console.log(name4 + "is a good boy");
+
+    function add(a, b) {
+        console.log(`Addition of a and b is ${a + b}`)
+        return "This is a strings"
+    }
+
+    let var2 = add(23, 7)
+    console.log("this is var2 " + var2)
+
+    function letstry(name, text = "this is by default text") {
+        console.log(name1 + "is a creative boy")
+        console.log(name2 + "is a creative boy" + text)
+    }
+
+    letstry(name1, text)
+    letstry(name2)
+
+    function sum(a, b, c) {
+        let d = a + b + c;
+        console.log(`addition of two numbers is ${d}`);
+        return d;
+    }
+
+    returnvar = sum(5, 5, 5);
+    console.log(returnvar);
+
+</script>
+
+</html>

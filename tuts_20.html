@@ -1,0 +1,120 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position relative, absolute,fixed and sticky in css</title>
+    <style>
+        header{
+            border: 3px solid red;
+        }
+        .parent{
+            margin: 3px 3px;
+        }
+        .box{
+            border: 3px solid black;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            display: inline-block;
+        }
+        #box3{
+            /* Types of position :  static(default),relative,absolute,fixed and sticky */
+            /* position: relative; move to  our position with take space  */
+            /* position: absolute; move to  our position without take space  */
+            /* top: 13px;           
+            left: 150px; */
+            /* position: fixed; */
+            position: sticky;
+            top: 500px;
+            left: 30px;
+            /* right: 50px; */
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="parent">
+        <div id="box1" class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+        <div id="box4" class="box">4</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quaerat pariatur perspiciatis repellat? Quis sequi consequatur nulla a temporibus quibusdam omnis reprehenderit iure eos? Quasi veritatis tempore voluptas voluptatem cupiditate porro. Natus molestias amet itaque possimus neque vel distinctio, dolore culpa quos magnam sint temporibus omnis asperiores, voluptate at laboriosam ipsum adipisci! Nulla explicabo, tempora porro quibusdam ipsum consequatur perspiciatis obcaecati laudantium nemo fuga voluptatum suscipit ipsa cumque facere, distinctio non officia blanditiis iste in. Impedit expedita vitae cum modi illo dolor reprehenderit ad enim! Quidem doloribus nulla hic ad unde, deserunt, fuga ratione vero quisquam beatae, temporibus laborum pariatur sunt! Laboriosam, vel? Dolorem accusantium itaque quod ullam, odio beatae ipsum deserunt eum dolorum dignissimos molestias ut. Officiis facere, ducimus expedita exercitationem tempora animi. Fugit cumque eum delectus vel eligendi quae iure, accusamus illum repudiandae tempora. Voluptate voluptatum excepturi quo, quas consectetur sunt tempore hic et neque alias fugit! Ut officiis eius magnam debitis, voluptatem pariatur quos ipsa. Aliquam facilis ducimus omnis, suscipit deserunt nihil inventore vitae tempore voluptatum nobis perferendis. Iste consectetur, beatae, voluptate ab, ea vero ad rem rerum dolor animi accusamus neque voluptas assumenda perspiciatis qui porro dignissimos quasi molestias voluptatem est. Necessitatibus sint exercitationem eius excepturi, laborum quae enim id quas fugiat consequuntur numquam provident impedit nemo quia repudiandae fugit repellendus fuga. Nostrum, nam libero? Reiciendis consequatur iusto eius tempore deserunt, consequuntur maiores tenetur saepe itaque provident libero velit porro vel delectus molestias quidem nobis aliquam nisi adipisci exercitationem mollitia praesentium culpa eum corporis. Aliquam sapiente illo earum. Porro, atque soluta impedit aliquid adipisci dolores dolorem eos officia aut. Sint laborum quam tempora quidem laudantium minus, ut debitis. Quisquam nemo ad porro saepe veniam et id, dolores, in illo magni libero eos perspiciatis beatae voluptas fugit doloremque nostrum rerum laudantium eveniet delectus iste, quidem fugiat? Ut impedit molestias repudiandae blanditiis explicabo dolorem aliquid! Inventore veritatis, id quo dignissimos architecto itaque dolor sed? Nisi, cupiditate? Repellat nemo obcaecati atque fugit sapiente, veritatis hic animi cum iure qui esse et dolores facilis fuga excepturi nostrum magnam porro doloribus illo id autem officiis, ipsa dicta. At obcaecati quos quas veritatis fuga doloribus et dolorum, id facilis accusantium repellendus  maiores ratione expedita molestiae corporis suscipit sint mollitia, recusandae magni numquam illo eius tenetur, perspiciatis enim ut aperiam? Quas vero consectetur veritatis maiores quis minima expedita corrupti molestiae architecto nesciunt, a enim nam adipisci repellendus cum perferendis et exercitationem mollitia. Dolorem corporis cumque eius minima illo, dolore inventore perferendis! Deserunt voluptates repellat omnis amet atque, eos soluta aperiam perferendis eaque dignissimos dolorem officia incidunt deleniti doloremque voluptatibus temporibus quos velit ipsum. Harum velit quibusdam aspernatur temporibus alias? Ullam, id asperiores? Maxime esse eaque soluta id beatae assumenda qui nesciunt consectetur. Esse molestiae explicabo porro, aliquid fugiat placeat, nemo iusto quis nam quos et error accusamus autem voluptatum recusandae obcaecati illo nostrum rerum atque pariatur eius. Consectetur a adipisci explicabo iste ipsa praesentium quis vitae unde. Voluptate architecto cumque aliquam tenetur quod beatae sint quaerat tempore eveniet omnis excepturi ullam similique nemo esse, voluptatem enim voluptatibus. Odit nesciunt, eum quibusdam voluptatum dolores totam cumque voluptatem, ea accusamus inventore earum! Dolor repellendus ut quo illum facere!met possimus nesciunt libero molestias ea cumque deserunt sint est expedita. Earum dignissimos ex suscipit in consectetur nam aut  doloremque?</p>
+    </div>
+    </header>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position-static,relative , absolute , fixed and sticky</title>
+    <style>
+        .boxes{
+            border: 4px solid red;
+            padding: 4px 2px;
+            height: 3000px;
+            background-color: rgb(236, 184, 184);
+            /* overflow: auto; */
+        }
+
+        .box{
+            border: 2px solid green;
+            height: 200px;
+            width: 200px;
+            float: left;
+            font-size: 30px;
+            margin: 3px 5px ;
+        }
+
+
+        
+        #box1{
+            background-color: green;
+            position: relative;
+            top: 30px ;
+            left: 50px;
+        }
+        
+        
+        #box2{
+            background-color: rgb(235, 61, 61);
+            position: absolute;
+            top: 30px;
+            right: 60px;
+            left: 100px;
+        }
+        
+        
+        #box3{
+            background-color: orange;
+            position: fixed;
+            left: 1000px;
+        }
+        
+        
+        #box4{
+            background-color: yellow;
+            position: sticky;
+            top: 200px;
+            left: 2500;
+            /* right: 300px; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box" id="box1">Box-1</div>
+        <div class="box" id="box2">Box-2</div>
+        <div class="box" id="box3">Box-3</div>
+        <div class="box" id="box4">Box-4</div>
+    </div>
+</body>
+</html>

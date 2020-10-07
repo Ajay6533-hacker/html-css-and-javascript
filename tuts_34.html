@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and objects in java scrips</title>
+    <Script src="tuts_34.js"></Script>
+</head>
+
+<body>
+    <div class="containers">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat numquam vitae et porro quo possimus enim,
+        incidunt officia nihil quas.
+    </div>
+</body>
+<script>
+
+    //  Create  various types of objects
+    let var1 = "string";
+    let var2 = true;
+    let var3 = null;
+    let var4 = undefined;
+
+    console.log(typeof (var2))
+
+    // create  a object in the form of keys and values :
+    let myobjects = {
+        name: "Ajay",
+        branch: "Coputer-science",
+        Roll_no: 001,
+        Role: "Actor",
+    }
+
+    console.log(myobjects)
+    console.log(myobjects.name)
+    let new1 = myobjects.branch
+    console.log(new1)
+    let new2 = myobjects.branch = "cs";
+    console.log(new2)
+
+
+    
+    
+    let Array1 = [String, null, 38, "mystring", 48.4]
+    let Array2 = [2, 3, 54, 64, 4, 5]
+    console.log(Array1)
+    console.log(Array1[2])
+    // console.log(type(Array1[2]))
+    Array1[1]="ajay"
+    console.log("this is my full array " ,Array1)
+    console.log(`The position of ajay is ${Array1.indexOf("ajay")}`)
+
+
+
+    let array3 = new Array(4);
+    console.log(array3.push("mystring"))
+    console.log("After push the values " + array3[4])
+
+ 
+    let pushvalue = Array2.push("This is string")
+    console.log("this is pushies values " + pushvalue)        //Here output is 7
+
+ 
+    Array2.push(10);
+    console.log("this is also my push values" + Array2)    // Here output is = this is also my push values2,3,54,64,4,5,This is string,10
+    console.log(Array1.length)
+    console.log(Array2.sort())
+
+</script>
+
+</html>

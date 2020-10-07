@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introductions and creating a Basic Grid</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        /* grid-template-columns: 100px 100px 100px; */
+        /* grid-template-columns: 100px 100px auto; */
+        /* grid-template-columns: 1fr  3fr 1fr;      Ratio maintain */
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 2rem;
+    }
+    .item{
+        /* height: 100px;
+        width: 100px; */
+        color: white;
+        background-color: red;
+        border: 2px solid black;
+        padding: 5px 2px;
+    }
+</style>
+<body>
+    <div class="container">      <!--If container display: grid; then container will be make a grid and all div class make a grid items -->
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-9</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attributes and nth types peseudo selector</title>
+</head>
+<style>
+    .form{
+        border: 3px solid red;
+        background-color: rgb(168, 168, 235);
+        padding: 10px;
+    }
+    .list{
+        border: 2px solid green;
+        background-color: rgb(164, 218, 147);
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    input{
+        margin: 4px 2px 4px 2px;
+    }
+    input[type='text']{
+        width: 200px;
+        height: 20px;
+        margin: 20px;
+    }
+    input[type='email']{
+        width: 200px;
+        height: 20px;
+        margin: 20px;
+    }
+    ul li:nth-child(1n+0){
+        color: blue;
+    }
+    /* ul li:nth-child(2n+0){
+        color: red;
+    } */
+    /* ul li:nth-child(odd){
+        color: red;
+    }
+    ul li:nth-child(even){
+        color: blue;
+    } */
+</style>
+
+<body>
+    <h2>specials selectors</h2>
+    <div class="form">
+        <form action="rugh.php">
+            Name: <input type="text" name="name" id="1"><br>
+            <a href="https://google.com" target="blank">go to google</a><br>
+            Gmail id: <input type="email" name="mail" id="2" placeholder="@gmail.com"><br>
+            <input type="submit" name="submit" id="3">
+        </form>
+    </div>
+    <div class="list">
+        <ul>
+            <li>List 1</li>
+            <li>List 2</li>
+            <li>List 3</li>
+            <li>List 4</li>
+            <li>List 5</li>
+            <li>List 6</li>
+            <li>List 7</li>
+        </ul>
+    </div>
+</body>
+
+</html>

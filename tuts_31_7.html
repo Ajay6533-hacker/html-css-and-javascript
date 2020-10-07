@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating Layout using Grid Template Area</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+
+        grid-template-areas:
+            /*important */
+            'navbar navbar  navbar navbar'
+            'section section section aside'
+            'footer  footer  footer  footer';
+
+    }
+
+    /* without this id selector grid-template-areas are not working properly */
+    #navbar {
+        grid-area: navbar;
+    }
+
+    #section {
+        grid-area: section;
+    }
+
+    #aside {
+        grid-area: aside;
+    }
+    footer{
+        grid-area: footer;
+    }
+
+    .item {
+        background-color: rgb(253, 253, 112);
+        border: 2px solid black;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item" id="navbar">Home About contact us</div>
+
+        <div class="item" id="section">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quod fuga incidunt
+            at in explicabo, tenetur minima saepe inventore blanditiis, reprehenderit rem molestiae maxime adipisci
+            officiis earum placeat possimus nesciunt? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat
+            architecto deleniti aut quas culpa neque consectetur, qui consequuntur itaque maxime dicta vero doloremque
+            quos iure illo fuga quae officia sint quisquam eum autem est commodi nobis? Earum illo architecto odit
+            minima corrupti vero. Maiores iusto quia est nisi, quo, cum voluptas animi sint dolore explicabo placeat
+            accusamus sit ullam voluptatum quasi consectetur assumenda adipisci, obcaecati totam similique consequuntur
+            aliquam veniam illo? Debitis, sunt quae autem molestiae iure ab esse quisquam ullam ducimus cum accusantium
+            quod atque rerum velit, nemo minima expedita tempore commodi voluptates. Quisquam voluptatum accusamus
+            provident sit minima cupiditate similique omnis corporis? Nostrum molestias necessitatibus cupiditate
+            debitis voluptatum quia non expedita, quis iure impedit sapiente reprehenderit eos assumenda tenetur error
+            vitae. Ut cum voluptatum repudiandae. Accusantium magnam neque iure. Magni in officie ut at voluptatibus
+            totam!.</div>
+
+        <div class="item" id="aside"> this is my aside Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Consequuntur, dolorem? Nemo commodi eveniet qui ducimus dolor quia nulla voluptas aperiam cumque facere,
+            tenetur optio quos ipsum ab omnis deserunt minus
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem deleniti omnis placeat alias
+            aliquid debitis illo praesentium quo ratione, nam asperiores soluta, voluptatibus quos atque excepturi
+            maxime unde, sunt corrupti! Minus cupiditate, dolorem quas maxime ab repudiandae perspiciatis corporis
+            exercitationem ea nihil iusto, placeat ipsa quod libero suscipit cumque a totam mollitia atque iste corrupti
+            accusamus in esse! Eveniet aliquam quidem itaque?</div>
+    </div>
+    <footer class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio odit porro minus nisi! Laborum reprehenderit,
+        explicabo eos eligendi exercitationem, consequatur molestias voluptas quos optio nemo error? Laudantium autem
+        architecto temporibus.
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css Types of basics selectors</title>
+    <style>
+        /*  Element selector */
+        p{
+            color: red;
+            border: 2px solid  black;
+        }
+        /*  This is a id selector */
+        #myid{
+            color: green;
+            background-color: yellow;
+        }
+
+        /* class selector */
+        .myclass{
+            color: blue;
+            background-color: greenyellow;
+        
+        }
+    
+        /* both id and class selector on an element */
+        .thisme{
+        color: rosybrown;
+        background-color: greenyellow;
+        }
+        #myid1{
+            color: green;
+            background-color: pink;
+        }
+
+        /* This is my combine grouping selector */
+        span,footer{
+            color: blue;
+            background-color: cornsilke;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h3>Types of selectors</h3>
+    <li>
+        <ol type="1">
+            1. css element selector <br>
+            2. css id selector <br>
+            3. css class selector <br>
+            4. css grouping selector <br>
+        </ol>
+    </li>
+    <p> this is my Element selector</p>
+    <p id="myid"> this is my id selector</p>
+
+    <!--  class selector have higher precedance to id selector -->
+    <div id="myid1" class="thisme"> this is my id and class selector</div><br>
+
+    <strong class="myclass"> This is only for my class selector</strong> <br>
+    <span>this is my span paragraph</span>
+    <footer>This is my footer paragraph</footer>
+
+</body>
+</html> 

@@ -1,0 +1,119 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>invisibility and z-index</title>
+</head>
+<style>
+    /*  z-index worked upon position like:- relative,absoulute,sticky and fixed must both side */
+    .boxes{
+        border: 3px solid black;
+        height: 150px;
+        background-color: white;
+    }
+    #box1{
+        background-color: green;
+    }
+    #box2{
+        background-color: red;
+        /* display: none; */
+    }
+    #box3{
+        background-color: pink;
+        /* visibility: hidden; */
+        position: absolute;
+        /* z-index: 2px; */
+        left: 60px;
+    }
+    #box4{
+        background-color: blue;
+        position: absolute;
+        /* z-index: 30px; */
+        /* right: 50px; */
+    }
+    .box{
+        display: inline-block;
+        /* z-index: 2px; */
+        width: 100px;
+        height: 100px;
+        border: 2px solid green;
+        /* margin: 2px 5px; */
+    }
+</style>
+<body>
+    <div class="boxes">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>z-index and invisibility</title>
+    <style>
+        .boxes{
+            border: 2px solid  red;
+            overflow: auto;
+        }
+
+
+        .box{
+            border: 2px solid green;
+            width: 150px;
+            height: 150px;
+            margin: 3px 4px;
+        }
+
+
+        #box-1{
+            background-color: greenyellow;
+            float: left;
+        }
+
+
+        #box-3{
+            background-color: yellow;
+            float: left;
+            position: relative;
+            z-index: 3;
+        }
+
+
+        #box-2{
+            background-color: pink;
+            float: left;
+            position: relative;
+            /* position: absolute; */
+            z-index: 3;
+            top: 30px;
+            left: 40px;
+        }
+        
+        
+        
+        #box-4{
+            background-color: orange;
+            float: left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box" id="box-1">1</div>
+        <div class="box" id="box-2">2</div>
+        <div class="box" id="box-3">3</div>
+        <div class="box" id="box-4">4</div>
+    </div>
+</body>
+</html>

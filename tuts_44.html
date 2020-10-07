@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json (JavaSript object notation)</title>
+</head>
+<body>
+    <div class="container">
+        <h3>This is Json in JavaSript</h3>
+    </div>
+</body>
+    <script>
+        let obj1 = {
+            Name : "Ajay",
+            branch : "computer-science",
+            roll_no : 1713051001,
+            address : "Pansali",
+        }
+        console.log("This is my object is", obj1)
+
+        let myJsonstr = JSON.stringify(obj1)
+        console.log(myJsonstr)       // All object convert into string formate
+
+        myJsonstr = myJsonstr.replace('pansali','Kailash vihar Pansali');
+        console.log(myJsonstr)
+
+        newJsonObj = JSON.parse(myJsonstr);   // conver into object like same as obj1
+        console.log(newJsonObj)
+    </script>
+</html>

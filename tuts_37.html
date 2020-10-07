@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Loops in JavaScript</title>
+</head>
+<Script src="tuts_37.js"></Script>
+
+<body>
+    <h3>this html body write for Loops in JavaScript</h3>
+</body>
+
+<script>
+    console.log("About Loops")
+
+    // For loops
+    // let i = 0;
+    // for (i = 0; i < 4; i++) {
+    //     console.log(`This is Ajay ${i}`);
+    // }
+
+    // // Iterate the element into  list
+    // let friends = ["Aman", "Nitish", "Rahul", "Deepak", 'Hari om', 'vikram']
+    // for (let index = 0; index < friends.length; index++) {
+    //     console.log(`hello friends ${friends[index]}`)
+    // }
+
+    // // Iterate using by forEach() function
+    // friends.forEach(function f(element) {
+    //     console.log(`hello friends ${element}`)
+    // });
+
+    // // Iterate using by for of 
+    // for (element of friends) {
+    //     console.log(`hello friends ${element}`)
+    // }
+
+
+    // // Iterate using by for in 
+    // let employee = {
+    //     name: "Ajay",
+    //     salary: 50000,
+    //     address: "Pansali"
+    // }
+
+    // for (key in employee) {
+    //     console.log(`The ${key} of emploee is ${employee[key]}`);
+    // }
+    // for (key in employee) {
+    //     console.log(`my key is ${key}`);
+    // }
+
+
+    // While loops
+    // let num = 0;
+    // let j = 0;
+    // while (num < 21) {
+    //     num1 = num % 2;
+    //     if (num1 == 0) {
+    //         console.log(`2 * ${j} = ${num}`);
+    //         j++;
+    //     }
+    //     else {
+    //         console.log(`Even number from 1 to 20  =  ${num}`);
+    //     }
+    //     num++;
+    // }
+
+    i = 0;
+    for (i = 0; i < 21; i++) {
+        even = i % 2;
+        j = 0;
+        if (even == 0) {
+            console.log(`2 * ${j} =  ${i}`);
+        }
+        else {
+            console.log("The odd number is", i)
+        }
+        j+=1;
+    }
+
+    // Do while loops
+    // let i = 0;
+    // do {
+    //     console.log(`print this is my name ${i}`)
+    //     i++;
+    // } while (i < 4)
+</script>
+
+</html>

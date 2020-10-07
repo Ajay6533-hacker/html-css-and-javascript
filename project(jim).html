@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ fitness</title>
+    <style>
+        body {
+            background-image: url(ajfitness.jfif);
+        }
+
+
+        #subhead1 {
+            top: 5px;
+            width: 200px;
+            color: red;
+            font-size: 15px;
+            font-weight: bold;
+        }
+
+        #subhead2 {
+            width: 50%;
+            /* margin: auto; */
+            margin-top: 0px;
+            margin: 0px 230px;
+            position: absolute;
+            top: 50px;
+
+        }
+
+        #subhead3 {
+            top: 50px;
+            position: absolute;
+            right: 1px;
+            margin-top: 30px;
+        }
+
+        .list li {
+            display: inline-block;
+            padding: 3px 60px;
+            margin-top: 2px;
+            width: 50px;
+        }
+
+        .list a:hover {
+            background-color: white;
+            color: red;
+            text-decoration: underline;
+        }
+
+        .list li a {
+            font-size: 40px;
+            text-decoration: none;
+            color: white;
+        }
+
+        img {
+            width: 150px;
+            height: 80px;
+            padding: 20px 10px 10px 20px;
+        }
+
+        .input {
+            padding-right: 0px;
+            display: inline-block;
+
+        }
+
+        .head {
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .box {
+            width: 800px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .form {
+            color: white;
+            font-size: 35px;
+        }
+
+        input {
+            width: 200px;
+            height: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="mainhead">
+        <div class="head" id="subhead1">
+            <img src="dumble.jfif" alt="">
+            <p>WELCOME TO AJ FITNESS</p>
+        </div>
+        <div class="head" id="subhead2">
+            <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Section</a></li>
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+        <div class="head" id="subhead3">
+            <div class="input">
+                <input type="number" name="contact us" placeholder="+9189xxxxxx">
+            </div>
+            <div class="input">
+                <input type="email" name="mail" placeholder="aj@gamil.com">
+            </div>
+        </div>
+    </header>
+    <section class="box">
+        <form action="python.php" class="form">
+            <div>
+                <div>
+                    <label for="name" class="label">User
+                        name</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" name="name" id="name">
+                </div><br>
+                <div>
+                    <label for="Contact" class="label"> Contact no.</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="number" name="ph.no." id=contact>
+                </div><br>
+                <div>
+                    <label for="gym" class="label">Address:</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <textarea name="address" id="gym" cols="30" rows="3"></textarea>
+                </div> <br>
+                <div>
+                    <label for="birth" class="label">Date of birth\:</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="datetime-local" name="D.O.B" id="birth">
+                </div> <br>
+                <div>
+                    <label for="gender">Gender:</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Male: <input type="radio" name="gender"> Female: <input type="radio" name="gender"> other: <input
+                        type="radio" name="gender">
+                </div><br>
+                <div>
+                    <label for="cource" class="label">select joining time</label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <select name="monthlycource" id="cource">
+                        <option value="3months"> 3 month</option>
+                        <option value="6months">6 months</option>
+                        <option value="1year">1 year</option>
+                        <option value="more than 1 year">1 year and more</option>
+                    </select>
+                </div><br>
+                <div>
+                    <input type="submit" name="submit"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="reset" name="reset">
+                </div><br>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

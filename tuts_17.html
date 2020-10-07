@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector and more designing </title>
+    <style>
+        .container {
+            font-weight: bold;
+            font-size: 40px;
+            color: blue;
+            background-color: orange;
+            border: 3px solid green;
+            width: 800px;
+            margin: auto;
+        }
+
+        a{
+            text-decoration:none;
+            color: black;
+            font-size:17px ;
+            background-color: white;
+            border: 1px solid black;
+            margin-left: 20px;
+        }
+    
+        
+        a:hover{
+            color: red;
+            border: 3px solid orange;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        
+        
+        button:hover{
+            color: green;
+            background-color: white;
+        }
+       
+        
+       
+       
+        /* a.visitid{
+            background-color:  darkblue;
+            color: blue;
+        } */
+       
+       
+        a.active{
+            background-color: black;
+        }
+       
+       
+       
+        .btn{
+            /* background-color: rgb(86, 247, 80); */
+            padding: 2px 4px;
+            font-size: 20px;
+            font-weight: bold;
+            /* width: 100px; */
+            border: 1px solid black;
+            border-radius: 3px;
+            border: none;        /* border: none;   In this attribute means If given width and height than not change all content written inside the border */
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="cont1">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque incidunt id eius quia quisquam. Illum
+            voluptas exercitationem accusantium quibusdam? Exercitationem et deleniti ullam odio facilis ipsum ipsam
+            nulla, dolor quaerat illo. Vitae consequatur labore dolorum molestiae libero velit natus corporis!
+        </p>
+        <a href="http://google.com" class="btn" target="_blank">Read more </a>&nbsp;&nbsp;
+        <button class="btn">contact us</button>
+    </div>
+</body>
+
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More designing and pseudo selectors</title>
+    <style>
+        .box{
+            border: 3px solid green;
+            background-color: rgb(233, 185, 97);
+            width: 900px;
+            padding: 40px 10px;
+            margin: 200px auto;
+        }
+        h1:hover{
+            cursor: pointer;
+            text-align: center;
+            font-size: 40px;
+            font-weight: solid;
+            color: indigo;
+        }
+        #contact:hover, #more:hover{
+            background-color: rgb(133, 170, 250);
+            cursor: pointer;
+            color: red;
+            font-weight: bold;
+        }
+        .button{
+            font-size: 20px;
+            border: 2px solid green;
+            font-size: 25px;
+            text-decoration: none;
+            padding: 4px;
+            margin: 10px 10px;
+            background-color: yellow;
+            font-weight: solid;
+            color: green;
+            border-style: none;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1> pseudo selector and more designings</h1>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, cumque molestias? Exercitationem eum velit tempora eveniet porro omnis ullam illo! Sequi ea, nobis commodi rerum numquam nemo vero dolores rem minima quaerat aspernatur adipisci culpa, Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquam eligendi pariatur officiis corrupti sunt consectetur minima atque perferendis a cum, adipisci molestiae quod eveniet doloremque quas. Sunt doloribus magni optio officia illo dolor neque labore tempora. Voluptatum, neque aut.  placeat, labore facilis consequuntur blanditiis quos! Quasi eius repudiandae laborum, suscipit deleniti magnam fugit totam.
+        </p>
+        <div>
+            <a href="" class="button" id="more"> Show more</a>
+            <button class="button" id="contact">contact us</button>
+        </div>
+    </div>
+</body>
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selector</title>
+    <style>
+        .box{
+            width: 600px;
+            height: 300px;
+            background-color: rgb(252, 233, 198);
+            border: 4px solid black;
+            padding: 4px 2px;
+            margin: auto;
+        }
+        h2{
+            text-align: center;
+            font-size: 30px;
+            color: red;
+        }
+        .button{
+            border-radius: 6px;
+            font-size: 20px;
+            background-color: yellow;
+            border: 2px solid green;
+            margin: 8px  6px ;
+            text-decoration: none;
+        }
+        button:hover{
+            cursor: pointer;
+            color: red;
+            background-color: lightblue;
+            border: none;
+        }
+        a:hover{
+            cursor: pointer;
+            background-color: tomato;
+            color: green;
+            border: none;
+        }
+        #button{
+            width: 50px;
+            padding: 4px 2px;
+        }
+        #button:visited{
+            border: 2px solid green;
+        }
+        a{
+            width: 200px;
+            padding: 4px 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2> This is heading</h2>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis quae sequi impedit, iusto quod
+            doloremque nesciunt sit explicabo, assumenda expedita nobis et maiores ea minus quis temporibus cum, minima
+            ipsam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, eveniet consequuntur! Illo earum
+            voluptatem tenetur obcaecati et iusto vel qui accusamus fuga nobis dignissimos perspiciatis doloribus,
+            fugit, nostrum laudantium! Quam!
+        </p>
+        <button class="button">contact us</button>
+        <a class="button" href="www.google.com"> Google </a>
+    </div>
+</body>
+
+</html> -->

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More selectors</title>
+    <style>
+        .container {
+            font-size: 50px;
+        }
+
+        h3 {
+            background-color: yellow;
+            font-size: 50px;
+        }
+
+        /* p{
+            background-color: pink;
+        } */
+        /* After div paragraph */
+        div p {
+            background-color: pink;
+        }
+
+        /* After div tag paragrph */
+        /* div>p {
+            background-color: tomato;
+        } */
+
+        /* before div tag paragraph */
+        /* div+p {
+            font-size: 300px;
+            background-color: yellow;
+            color: red;
+        } */
+    </style>
+</head>
+
+<body>
+    <h3>This is my more selector</h3>
+    <div class="container">
+        <div>
+            <p> this is my second paragraph</p>
+        </div>
+        <p>this is my first paragraph</p>
+    </div>
+    <p>This is my outermost paragraph</p>
+</body>
+
+</html>

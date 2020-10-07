@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String slicing and playing with Strings</title>
+</head>
+<Script src="tuts_32.js">
+</Script>
+
+<body>
+    <div id="container">
+        <p>
+            String slicing in my containers Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam inventore
+            amet vero in impedit esse. Ipsum id qui similique doloribus aut tempore consequuntur, quisquam illo, quis,
+            laudantium ipsam? Maxime, nesciunt.
+        </p>
+    </div>
+</body>
+<script>
+
+    let myvar = "This is Ajay "
+    let about = "This is my favourates name and variables"
+    let permetion = "yes"
+
+    console.log(myvar)
+    console.log(myvar.slice(0,7))
+
+    console.log(`concatinate of more strings ${myvar + about + permetion}`)
+    let myvar2 = myvar.replace('is','are');
+    console.log(myvar2)
+
+    console.log(about.indexOf('my'))      //output is 8
+    console.log(about.lastIndexOf(' is'))       //output is 4
+
+    console.log(permetion.substring(1,2))       //output is 'e'
+    console.log(permetion.substr(1,2))          //output is 'es'
+
+
+    let uppercase1 = myvar.toUpperCase(about)
+    let lower = about.toLowerCase(permetion)
+    console.log(uppercase1)
+    console.log(lower)
+
+    let p = "          This is                  Trim           "
+    console.log(p.trim())          // Ignore start and last white spaces
+
+    let add = myvar.concat(permetion)
+    console.log(add)
+
+    let var3 = about.charAt(6)         //characters couting and positioning
+    console.log(var3)
+
+
+
+</script>
+
+</html>

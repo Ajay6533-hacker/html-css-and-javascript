@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Transitions </title>
+</head>
+<style>
+    /* work on continues value */
+    body{
+        background-color: black;
+    }
+    .containers{
+        /* border: 3px solid white; */
+        height: 100px;
+        width: 100px;
+        color: red;
+        background-color:blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* transition-property: background-color;
+
+        transition-duration: 2s; */
+        /* transition-timing-function: ease-in;
+        transition-timing-function: ease-out; */
+        /* transition-timing-function: ease-in-out;
+        transition-delay: 4s; */
+
+        /* Short hand property of transition property in one line*/
+        /* transition: backgorund-color , transtition-duration , transition-timing-function, transition-delay; */
+        /* transition: background-color 1s ease-in-out .3s ;         */
+        
+        
+        transition: all 1s ease-in-out .3s ;        
+    }
+
+    .containers:hover{
+        background-color:green;
+        height: 200px;
+        width: 200px;
+        border-radius: 50px;
+        font-size: 50px;
+
+    }
+
+</style>
+<body>
+    <div class="containers">
+        <div id="box">
+            this is my transitions box
+        </div>
+    </div>
+</body>
+</html>
