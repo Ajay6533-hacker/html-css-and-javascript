@@ -30,7 +30,7 @@ console.log(str1)
 var str2 = 'Ajay here,"I have a car" '
 
 //  $ Symbol is used here to pick that particular string from the varable.
-var str3 = `${str1} and I am a programmer`         // left top key in keyboard
+var str3 = `${str1} and I am a programmer`        // left top key in keyboard
 console.log(str3)
 
 let  num4 = 34;

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,11 +8,12 @@
     <title>box Model</title>
     <style>
         /* universal selector(*) */
-        *{
+        * {
             box-sizing: border-box;
             padding: 0px;
             margin: 0px;
         }
+
         /* padding and margin both foramte have same */
         .first,
         .second,
@@ -21,19 +23,20 @@
             padding: 30px 3px 20px 5px;
         }
 
-        .container{
+        .container {
             background-color: rgb(162, 211, 240);
             border: 5px solid green;
-            margin-top: 40px ;
-            margin-bottom: 30px ;
-            margin-right: 20px ;
-            margin-left: 20px ;
-            width: 600px;                    /*padding and border can multiple but margin only one */
+            margin-top: 40px;
+            margin-bottom: 30px;
+            margin-right: 20px;
+            margin-left: 20px;
+            width: 600px;
+            /*padding and border can multiple but margin only one */
             border-radius: 20px;
-            
 
-        }
 
+        } -->
+    <!-- 
         /* .first {
             padding-top: 40px;
             padding-bottom: 40px;
@@ -50,10 +53,10 @@
         .third {
             border: 3px solid blue;
             padding: 50px 33px 50px 33px;
-            /* padding: 100px 0px; */       /* both padding y and x */
-            /* padding: 50px 50px 10px 50px;  top , right , bottom and left */
-            
-        } */
+            /* padding: 100px 0px; */
+        /* both padding y and x */
+        /* padding: 50px 50px 10px 50px;  top , right , bottom and left */
+
     </style>
 </head>
 
@@ -83,6 +86,73 @@
             ipsum debitis veritatis. Officiis quos distinctio accusantium aliquam necessitatibus.</p>
     </div>
 </body>
+
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-model</title>
+</head>
+<style>
+    .containers{
+        border: 3px solid red;
+        border-radius: 5px;
+    }
+    .container{
+        width: 400px;
+        margin: 30px 30px 0px 30px;
+        background-color: rgb(183, 183, 255);
+        border: 2px solid green;
+    }
+    p{
+        color: red;
+        padding: 30px 0px;
+        background-color: blue;
+        border: 30px solid black;
+    }
+</style>
+<body>
+    <div class="containers">
+        <h2>This is my all containers</h2>
+        <div class="container">
+            <h3>
+                This is my first container items
+            </h3>
+            <p id="first"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum omnis nesciunt quis recusandae quam
+                eius aspernatur nostrum hic nihil. Sunt distinctio consectetur alias! Perferendis minima quod adipisci in
+                cumque possimus saepe. Dolor temporibus magnam laboriosam  lorem30 accusamus voluptatem veniam, ex tenetur.</p>
+        </div>
+        <div class="container">
+            <h3>
+                This is my second container items
+            </h3>
+            <p id="second"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque fuga sint esse corporis sed
+                assumenda qui dolor? Doloribus quisquam ducimus exercitationem tenetur adipisci modi provident facere
+                consectetur laudantium alias, assumenda velit perferendis, odit nihil. Possimus ullam debitis eveniet? Odit,
+                rerum!</p>
+        </div>
+        <div class="container">
+            <h3>
+                This is my Third container items
+            </h3>
+            <p id="third">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos atque nesciunt repellendus sed quam
+                aliquid excepturi, maiores sequi eaque omnis deleniti velit accusantium. Odit et nisi dicta magnam?
+                Repudiandae, doloremque. Nemo soluta eos molestias odit perferendis commodi deserunt illo voluptas.
+            </p>
+        </div>
+    </div>
+
+</body>
+
 </html>
 
 
@@ -92,9 +162,8 @@
 
 
 
-
-<!-- This is my second practice -->
-<!DOCTYPE html>
+    <!-- This is my second practice -->
+    <!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -102,38 +171,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Box model</title>
     <style>
-        body{
+        body {
             background-color: rgb(233, 159, 233);
         }
+
         .box-model {
             height: 250px;
             width: 500px;
             border: 5px solid green;
-            
+
             padding-top: 100px;
             padding-bottom: 50px;
             padding-left: 40px;
             padding-right: 40px;
             padding: 10px 40px 50px 40px;
-           
-            
+
+
             /* margin-top: 100px;
             margin-bottom: 100px;
             margin-left: 50px;
             margin-right: 40px; */
-           
+
             /* margin: 10px 50px 10px 40px;
            
             background-color: rgb(187, 250, 128);
             border-radius: 20px; */
-            
+
             margin: auto;
             margin-bottom: 30px;
-            margin: 10px 10px ;
+            margin: 10px 10px;
 
 
         }
-
     </style>
 </head>
 
@@ -158,4 +227,4 @@
     </div>
 </body>
 
-</html>
+</html> -->
